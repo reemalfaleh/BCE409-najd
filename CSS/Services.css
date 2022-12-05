@@ -1,0 +1,243 @@
+	/*-- UNIVERSAL --*/
+    @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap'); /*Water+ Brush Font*/
+    @import url("https://use.typekit.net/sor3jvd.css");/*Futura Font*/
+
+html, body {
+    overflow-x: hidden;
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   }
+.btn {
+    background-color:#43634a!important;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px 15px;
+   }
+.btn:hover{
+    background-color:#f6c9af!important;
+    color:#43634a;
+   }
+i{
+    color:#43634a;
+   }
+
+.diff-font{
+    font-family: lust, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:80px;
+    color:white;
+}
+body{
+    background-image: url('../images/services/sewingmachine.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+/*============= NAVIGATION =============*/
+   
+#logo {
+    height : 60px;
+    padding: 0 0.7em;
+   }
+
+.navbar{
+    font-size: 18px;
+    letter-spacing:50 rem;
+    padding:0;
+    box-shadow:0 1rem 1.2rem rgba(0,0,0,0.2);
+    z-index:1;/*to position an element on top of anothr*/
+    background-color:white!important;
+           }
+           
+    /* to remove border around toggle icon*/      
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+           }
+
+           
+.nav-link{
+    color:black!important;/* to override the original class*/
+           }
+           
+.nav-link:hover{
+    color:#e9a37f!important;/* to override the original class*/;
+           }
+   
+.nav-item {
+    margin: 0 1	em;
+    position: relative;
+    padding:15px;
+           }
+             
+   /* this is for the underline effect*/
+   
+.nav-item::after {
+    content: "";
+    display: block;
+    background-color:#e9a37f;
+    margin: auto;
+    width: 0%;
+    height: 2px;
+    transition: 0.7s ;
+           }
+           
+.nav-item:hover::after {
+    width: 100%;
+      
+           }
+           
+/*============= FIRST SECTION =============*/
+
+.first_section{
+    background: linear-gradient( 45deg,
+        rgba(233, 163, 127, 0.5),
+        rgba(67,99,74, 0.5) 100%);
+    text-align: center;
+    height: 70vh;
+    padding-top: 160px;
+}
+
+
+
+
+ /*============= SECOND SECTION =============*/
+
+ .second_section{
+    background-color:white;
+ }
+
+ #header-of-cards{
+    transform: translateY(10px);
+    text-align:center;
+    color:#43634a;
+}
+
+#card-section{
+    padding-bottom: 1rem;
+}
+ h4{
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+  }
+
+.card:hover {
+    transform: scale(1.1);
+  }
+
+
+
+
+ 
+
+ /*============= THIRD SECTION =============*/
+
+.third_section{
+    background: linear-gradient( 45deg,
+    rgba(233, 163, 127, 0.5),
+    rgba(67,99,74, 0.5) 100%);
+}
+
+.col-lg-3{
+    background-color:#43634a;
+    box-shadow:0 1rem 1.2rem rgba(0,0,0,0.2); 
+}
+
+
+	
+#carousel{
+    box-shadow:0 1rem 1.2rem rgba(0,0,0,0.2);
+			}
+
+
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+                }
+         
+       
+        
+
+  /*============= FOOTER =============*/
+footer{
+    background-color:#f6c9af;
+    padding-bottom: 5px;
+           }
+
+.row h6{
+    font-weight:bold;
+       
+           }
+   
+.row h6:hover{
+    color: #43634a;
+   }	
+
+input, input:focus{
+    border-radius: 20px;
+    padding: 2px 5px;
+    outline:0;
+    border:0
+   }
+
+
+   /*============= SOCKET =============*/
+.socket{
+    background-color:#f6c9af;
+
+           }
+
+.socket p{
+    padding-left: 15px;
+           }
+
+
+
+   /*============= MEDIA QUERIES =============*/
+
+   /* Devices under 1199px (xl) */
+   @media (max-width: 1199.98px) {
+
+   }
+   /* Devices under 992px (xl) */
+   @media (max-width: 991.98px) {
+
+   }
+   /* Devices under 768px (md) */
+   @media (max-width: 767.98px) {
+       
+       body{font-size: medium;}
+   }
+   /* Devices under 576px (sm) */
+   @media (max-width: 575.98px) {
+       .navbar a {
+           float: none;
+           display: block;
+         }
+   }
+
+
+   
+
+   /*-- Bootstrap Mobile Fix --*/
+.row, .container-fluid {
+     margin-left: 0px !important;
+     margin-right: 0px !important;
+   }
+
+  
+  

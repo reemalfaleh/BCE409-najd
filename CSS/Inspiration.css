@@ -1,0 +1,361 @@
+	/*-- UNIVERSAL --*/
+    @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap'); /*Water+ Brush Font*/
+    @import url("https://use.typekit.net/sor3jvd.css");/*Futura Font*/
+   
+html, body {
+    overflow-x: hidden;
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   }
+.btn{
+    background-color:#43634a!important;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px 15px;
+   }
+.btn:hover{
+    background-color:#f6c9af!important;
+    color:#43634a;
+   }
+
+i{
+    color:#43634a;
+   }
+
+.diff-font{
+    font-family: lust, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:80px;
+    color:#f6c9af;
+}
+
+.center{
+    text-align: center;
+}
+
+/*============= NAVIGATION =============*/
+   
+#logo {
+    height : 60px;
+    padding: 0 0.7em;
+   }
+
+.navbar{
+    font-size: 18px;
+    letter-spacing:50 rem;
+    padding:0;
+    box-shadow:0 1rem 1.2rem rgba(0,0,0,0.2);
+    z-index:1;/*to position an element on top of anothr*/
+    background-color:white!important;
+           }
+           
+    /* to remove border around toggle icon*/      
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+           }
+
+           
+.nav-link{
+    color:black!important;/* to override the original class*/
+           }
+           
+.nav-link:hover{
+    color:#e9a37f!important;/* to override the original class*/;
+           }
+   
+.nav-item {
+    margin: 0 1	em;
+    position: relative;
+    padding:15px;
+           }
+             
+   /* this is for the underline effect*/
+   
+.nav-item::after {
+    content: "";
+    display: block;
+    background-color:#e9a37f;
+    margin: auto;
+    width: 0%;
+    height: 2px;
+    transition: 0.7s ;
+           }
+           
+.nav-item:hover::after {
+    width: 100%;
+      
+           }
+           
+/*============= FIRST SECTION =============*/
+
+.first-section{
+    background-color:white;
+    margin-top: 30px;
+}
+
+.c-image{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 10px 10px 5px #f6c9af;
+}
+
+
+.fa-quote-left{
+    margin-top: 50px;
+    color:#f6c9af;
+    font-size: 5em;
+}
+
+.right-col{
+  /*background-color:aquamarine; */
+  margin-bottom: 10px;
+  margin-right: 0%;
+}
+
+.right-col h1 ,.blog-button{
+  margin-left: 80px;
+}
+
+.carousel-control-next,
+.carousel-control-prev  {
+    filter: invert(40%);   
+}
+
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition: opacity .6s ease-in-out;	
+}
+
+
+
+
+ /*============= SECOND SECTION =============*/
+
+ .second-section{
+     padding-top: 70px;
+ }
+
+ .second-section h1{
+    font-family: 'Water Brush', cursive;
+    font-size: 7rem;
+    letter-spacing:1.2rem ;
+    color:#43634a;
+    text-align: center;
+    padding-bottom:15px;
+
+
+    }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    
+  }
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px; 
+   
+   
+  }
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition:all 0.5s ease;
+  }
+
+.column img:hover {
+   transform: scale(0.9);
+   opacity: 80%;
+  }
+
+.img-gallery-btn{
+    margin: 20px auto;
+}
+.showmore{
+    display:none;
+}
+
+
+  
+
+ /*============= THIRD SECTION =============*/
+.third-section{
+    padding-top: 70px;
+ }
+
+
+ 
+.trends-box{
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin: auto;
+}
+
+.single-trend{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+
+.single-trend img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient( 
+        rgba(233, 163, 127, 0.5),
+        rgba(67,99,74, 0.5) );
+    opacity: 0;
+    transition: 1s;
+
+}
+.single-trend:hover .overlay{
+    opacity: 1;
+}
+
+.trend-description{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left:50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+
+
+}
+
+
+hr{
+    background: white;
+    height: 5px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.single-trend:hover .trend-description{
+    bottom: 20%;
+    opacity: 1;
+}
+
+
+
+
+
+  /*============= FOOTER =============*/
+footer{
+    background-color:#f6c9af;
+    padding-bottom: 5px;
+           }
+
+.row h6{
+    font-weight:bold;
+       
+           }
+   
+.row h6:hover{
+    color: #43634a;
+   }	
+
+input, input:focus{
+    border-radius: 20px;
+    padding: 2px 5px;
+    outline:0;
+    border:0
+   }
+
+
+   /*============= SOCKET =============*/
+.socket{
+    background-color:#f6c9af;
+
+           }
+
+.socket p{
+    padding-left: 15px;
+           }
+
+
+
+   /*============= MEDIA QUERIES =============*/
+
+   /* Devices under 1199px (xl) */
+   @media (max-width: 1199.98px) {
+
+   }
+   /* Devices under 992px (xl) */
+   @media (max-width: 991.98px) {
+
+   }
+   /* Devices under 768px (md) */
+   @media (max-width: 767.98px) {
+       
+    body{font-size: medium;}
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    .single-trend{
+        flex-basis:100%;
+        margin-bottom: 30;
+
+    }
+   }
+   
+   /* Devices under 576px (sm) */
+   @media (max-width: 575.98px) {
+    .navbar a {
+        float: none;
+        display: block;
+         }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+          }
+   }
+
+
+   
+
+   /*-- Bootstrap Mobile Fix --*/
+.row, .container-fluid {
+     margin-left: 0px !important;
+     margin-right: 0px !important;
+   }
+
+  
+  

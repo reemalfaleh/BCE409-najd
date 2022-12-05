@@ -1,0 +1,289 @@
+
+	/*-- Reset --*/
+    @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap'); /*Water+ Brush Font*/
+    @import url("https://use.typekit.net/sor3jvd.css");/*Futura Font*/
+
+
+html, body {
+    overflow-x: hidden;
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   }
+
+.btn {
+    background-color:#43634a!important;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px 15px;
+   }
+.btn:hover{
+    background-color:#f6c9af!important;
+    color:#43634a;
+   }
+
+i{
+    color:#43634a;
+   }
+
+
+.diff-font{
+    font-family: lust, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:80px;
+    color:#43634a;
+}
+
+
+
+/*============= NAVIGATION =============*/
+   
+#logo {
+    height : 60px;
+    padding: 0 0.7em;
+   }
+
+.navbar{
+    font-size: 18px;
+    letter-spacing:50 rem;
+    padding:0;
+    box-shadow:0 1rem 1.2rem rgba(0,0,0,0.2);
+    z-index:1;/*to position an element on top of anothr*/
+    background-color:white!important;
+           }
+           
+    /* to remove border around toggle icon*/      
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+           }
+
+           
+.nav-link{
+    color:black!important;/* to override the original class*/
+           }
+           
+.nav-link:hover{
+    color:#e9a37f!important;/* to override the original class*/;
+           }
+   
+.nav-item {
+    margin: 0 1	em;
+    position: relative;
+    padding:15px;
+           }
+             
+   /* this is for the underline effect*/
+   
+.nav-item::after {
+    content: "";
+    display: block;
+    background-color:#e9a37f;
+    margin: auto;
+    width: 0%;
+    height: 2px;
+    transition: 0.7s ;
+           }
+           
+.nav-item:hover::after {
+    width: 100%;
+      
+           }
+
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: grayscale(50);
+    opacity: 80%;
+  } 
+
+  /*============= FIRST SECTION =============*/
+
+
+  
+.intro {
+    height: 500px;
+  }
+
+.intro h1{
+    font-size: 150px;
+    text-align: center;
+    transform: translateY(70%);
+  }
+
+
+
+  /*============= SECOND SECTION =============*/
+
+
+.second-section{
+    opacity: 90%;
+    background-color:white;
+    height: 400px;
+  }
+
+   h4{
+    font-family: 'Water Brush', cursive;
+    font-size: 5rem;
+    color: #e9a37f;
+  }
+
+
+
+  .identify{
+    margin-top: 90px;
+    text-align: center;
+  }
+
+
+  /*============= THIRD SECTION =============*/
+
+  .third-section{
+    opacity: 90%;
+    background-color:white;
+    height: 500px;
+  }
+
+
+   /*============= FOURTH SECTION =============*/
+
+  .fourth-section{
+
+    opacity: 90%;
+    background-color:white;
+    height: 450px;
+  }
+
+ 
+
+  
+  
+
+  /*============= FOOTER =============*/
+  footer{
+    background-color:#f6c9af;
+    padding-bottom: 5px;
+        }
+
+.row h6{
+    font-weight:bold;
+    
+        }
+
+.row h6:hover{
+    color: #43634a;
+}	
+
+input, input:focus{
+    border-radius: 20px;
+    padding: 2px 5px;
+    outline:0;
+    border:0
+}
+
+
+   /*============= SOCKET =============*/
+.socket{
+    background-color:#f6c9af;
+
+           }
+
+.socket p{
+    padding-left: 15px;
+           }
+
+
+
+   /*============= MEDIA QUERIES =============*/
+
+   /* Devices under 1199px (xl) */
+   @media (max-width: 1199.98px) {
+
+   }
+   /* Devices under 992px (xl) */
+   @media (max-width: 991.98px) {
+
+
+   .second-section h4,.third-section h4, .fourth-section h4{
+        font-size:  50px;
+      
+    }
+    
+  
+
+   .fourth-section h3, .second-section h3, .third-section h3{
+    font-size:larger;
+}
+
+
+   }
+   /* Devices under 768px (md) */
+   @media (max-width: 767.98px) {
+       
+       body{font-size: medium;}
+
+   
+
+    .second-section h4,.third-section h4, .fourth-section h4{
+        font-size:  40px;
+      
+    }
+    
+  
+
+   .fourth-section h3, .second-section h3, .third-section h3{
+    font-size:large;
+}
+
+
+
+
+   }
+   /* Devices under 576px (sm) */
+   @media (max-width: 575.98px) {
+       .navbar a {
+           float: none;
+           display: block;
+         }
+
+
+        .second-section h4,.third-section h4, .fourth-section h4{
+            font-size:  30px;
+          
+        }
+
+        .fourth-section h3, .second-section h3, .third-section h3{
+            font-size:small;
+        }
+
+       
+
+        
+       
+   }
+
+
+   
+
+   /*-- Bootstrap Mobile Fix --*/
+.row, .container-fluid {
+     margin-left: 0px !important;
+     margin-right: 0px !important;
+   }
+
+  
+  

@@ -1,0 +1,220 @@
+	/*-- Reset --*/
+    @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap'); /*Water+ Brush Font*/
+    @import url("https://use.typekit.net/sor3jvd.css");/*Futura Font*/
+
+
+
+    html, body {
+        overflow-x: hidden;
+        font-family: futura-pt,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+       }
+    i{
+        color:#43634a;
+       }
+
+     
+    
+    /*============= NAVIGATION =============*/
+       
+    #logo {
+        height : 60px;
+        padding: 0 0.7em;
+       }
+    
+    .navbar{
+        font-size: 18px;
+        letter-spacing:50 rem;
+        padding:0;
+        box-shadow:0 1rem 1.2rem rgba(0,0,0,0.2);
+        z-index:1;/*to position an element on top of anothr*/
+        background-color:white!important;
+               }
+               
+        /* to remove border around toggle icon*/      
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+        border: none;
+               }
+    
+               
+    .nav-link{
+        color:black!important;/* to override the original class*/
+               }
+               
+    .nav-link:hover{
+        color:#e9a37f!important;/* to override the original class*/;
+               }
+       
+    .nav-item {
+        margin: 0 1	em;
+        position: relative;
+        padding:15px;
+               }
+                 
+       /* this is for the underline effect*/
+       
+    .nav-item::after {
+        content: "";
+        display: block;
+        background-color:#e9a37f;
+        margin: auto;
+        width: 0%;
+        height: 2px;
+        transition: 0.7s ;
+               }
+               
+    .nav-item:hover::after {
+        width: 100%;
+          
+               }
+    
+/*============== CONTACT FORM ============*/  
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+}  
+
+.col1{
+    padding: 40px;
+}
+.contactForm, tr, th, td{
+    border: 0;
+    background-color: #41634A;
+}
+
+.formTitle{
+    height: 40px;
+    font-family: futura-pt,sans-serif;
+    font-size:xx-large;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+table{
+    height: 600px;
+    width: 90%;
+    padding: 20px;
+}
+.input-form, .textarea{
+   font-family: futura-pt,sans-serif;
+   border: none;
+   border-bottom: 1.5px solid white;
+   size: 20px;
+   padding: 10px;
+   color: white;
+   background-color: #41634A;
+}
+.input-form:hover, .textarea:hover{
+    border-bottom: 1.5px solid #f6c9af;
+}
+
+#fileToUpload{
+    border: 2px dashed white;
+    width: 68%;
+}
+#fileToUpload:hover{
+   border: 2px dashed #f6c9af;
+}
+.btn1 {
+    background-color:#f6c9af!important;
+    border: none;
+    color: #282828;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px 15px;
+    align-content: center;
+   }
+.btn1:hover{
+    background-color:white!important;
+    color:#43634a;
+   }
+
+.con-image{/*change the logo's color*/
+    position: relative;
+    cursor: pointer;
+    width: 500px;
+    background-color: transparent;
+    object-fit:contain;
+}
+ /* end */
+
+
+  /*============= FOOTER =============*/
+footer{
+    background-color:#f6c9af;
+    padding-bottom: 5px;
+}
+
+.row h6{
+    font-weight:bold;
+}
+   
+.row h6:hover{
+    color: #43634a;
+}	
+
+#user-email, #user-email:focus{
+    border-radius: 20px;
+    padding: 2px 5px;
+    outline:0;
+    border:0
+}
+
+.btn2 {
+    background-color:#43634a!important;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px 15px;    
+}
+
+.btn2:hover{
+    background-color:#f6c9af!important;
+    color:#43634a;
+}
+
+/*============= SOCKET =============*/
+
+.socket{
+    background-color:#f6c9af;
+}
+
+.socket p{
+    padding-left: 15px;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+   /* Devices under 1199px (xl) */
+   @media (max-width: 1199.98px) {
+
+   }
+   /* Devices under 992px (xl) */
+   @media (max-width: 991.98px) {
+
+   }
+   /* Devices under 768px (md) */
+   @media (max-width: 767.98px) {
+       
+       body{font-size: medium;}
+   }
+   /* Devices under 576px (sm) */
+   @media (max-width: 575.98px) {
+       .navbar a {
+           float: none;
+           display: block;
+         }
+   }
+
+
+/*-- Bootstrap Mobile Fix --*/
+
+.row, .container-fluid {
+     margin-left: 0px !important;
+     margin-right: 0px !important;
+   }

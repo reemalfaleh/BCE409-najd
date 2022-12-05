@@ -1,0 +1,219 @@
+	/*-- UNIVERSAL --*/
+    @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap'); /*Water+ Brush Font*/
+    @import url("https://use.typekit.net/sor3jvd.css");/*Futura Font*/
+   
+   html, body {
+       overflow-x: hidden;
+       font-family: futura-pt,sans-serif;
+       font-weight: 400;
+       font-style: normal;
+   }
+   .btn {
+       background-color:#43634a!important;
+       border: none;
+       color: white;
+       text-align: center;
+       border-radius: 20px;
+       padding: 2px 15px;
+   }
+   .btn:hover{
+       background-color:#f6c9af!important;
+       color:#43634a;
+   }
+
+
+   
+
+   i{
+       color:#43634a;
+   }
+   
+
+   /*============= NAVIGATION =============*/
+   
+   #logo {
+       height : 60px;
+       padding: 0 0.7em;
+   }
+
+   .navbar{
+       font-size: 18px;
+       letter-spacing:50 rem;
+       padding:0;
+       box-shadow:0 1rem 1.2rem rgba(0,0,0,0.2);
+       z-index:1;/*to position an element on top of anothr*/
+       background-color:white!important;
+           }
+           
+   .navbar-toggler:focus,
+   .navbar-toggler:active,
+   .navbar-toggler-icon:focus {
+       outline: none;
+       box-shadow: none;
+       border: none;
+           }
+
+           
+   .nav-link{
+       color:black!important;/* to override the original class*/
+           }
+           
+   .nav-link:hover{
+       color:#e9a37f!important;/* to override the original class*/;
+           }
+   
+    .nav-item {
+       margin: 0 1	em;
+       position: relative;
+       padding:15px;
+           }
+             
+
+   
+           .nav-item::after {
+               content: "";
+               display: block;
+               background-color:#e9a37f;
+               margin: auto;
+               width: 0%;
+               height: 2px;
+               transition: 0.7s ;
+                      }
+                      
+           .nav-item:hover::after {
+               width: 100%;
+                 
+                      }
+
+
+
+
+   /*============= FIRST SECTION =============*/
+
+
+.row{
+    margin: 5rem auto;
+}
+
+
+
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+  }
+  
+  .vertical-menu a {
+    background-color:#f6c9af; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    border-bottom: 2px solid #43634a;
+    text-align: justify;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: white; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active1 {
+    background-color:#43634a; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+
+   /*============= FOOTER =============*/
+   footer{
+       background-color:#f6c9af;
+       padding-bottom: 5px;
+           }
+
+   .row h6{
+       font-weight:bold;
+       
+           }
+   
+   .row h6:hover{
+       color: #43634a;
+   }	
+
+   input, input:focus{
+       border-radius: 20px;
+       padding: 2px 5px;
+       outline:0;
+       border:0
+   }
+
+
+   /*============= SOCKET =============*/
+   .socket{
+       background-color:#f6c9af;
+       
+
+           }
+   .socket p{
+       padding-left: 15px;
+           }
+
+
+
+   /*============= MEDIA QUERIES =============*/
+
+   /* Devices under 1199px (xl) */
+   @media (max-width: 1199.98px) {
+
+   }
+   /* Devices under 992px (xl) */
+   @media (max-width: 991.98px) {
+
+   }
+   /* Devices under 768px (md) */
+   @media (max-width: 767.98px) {
+       
+       body{font-size: medium;}
+   }
+   /* Devices under 576px (sm) */
+   @media (max-width: 575.98px) {
+       .navbar a {
+           float: none;
+           display: block;
+         }
+   }
+
+
+   
+
+   /*-- Bootstrap Mobile Fix --*/
+   .row, .container-fluid {
+     margin-left: 0px !important;
+     margin-right: 0px !important;
+   }
+
+   /*-- Fixed Background Image --*/
+   .fixed-background {
+     position: relative;
+     width: 100%;
+     z-index: 1000!important;
+   }
+   .fixed-wrap {
+     clip: rect(0, auto, auto, 0);
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -999 !important;
+   }
+   .fixed {
+     z-index: -999!important;
+     display: block;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-position: center ;
+     -webkit-transform: translateZ(0);
+     transform: translateZ(0);
+     will-change: transform;
+   }
