@@ -227,7 +227,7 @@
 							</div>
 <script>
     function popup(){
-		if (<?php echo $email?> != ''){
+		if (<?php $email?> != ''){
 			window.alert("You have been added to our subscriber's list!");
 		}
 		else{
